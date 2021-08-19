@@ -31,13 +31,19 @@ char* get_nome_pessoa (tPessoa* p);
 Playlist* get_playlist_pessoa (tPessoa* p);
 
 /*Imprime as informações da pessoa
- * inputs:
- * output:
- * pré-condição: 
- * pós-condição:
+ * inputs: pessoa p
+ * output: nenhum
+ * pré-condição: pessoa p existe
+ * pós-condição: nenhuma
  */
 void imprime_pessoa (tPessoa* p);
 
+/*Libera a memória alocada para a pessoa
+ * inputs: pessoa p
+ * output: nenhum
+ * pré-condição: pessoa p existe
+ * pós-condição: TODA(!?) a memória alocada para a pessoa foi liberada
+ */
 void destroi_pessoa (tPessoa* p);
 
 #endif

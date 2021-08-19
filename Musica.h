@@ -47,7 +47,7 @@ void imprime_musica (tMusica* m);
  * inputs: música m
  * output: nenhum
  * pré-condição: música m existe
- * pós-condição: toda a memória alocada para a música foi liberada
+ * pós-condição: TODA(!?) a memória alocada para a música foi liberada
  */
 void destroi_musica (tMusica* m);
 

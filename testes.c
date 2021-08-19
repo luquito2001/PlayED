@@ -89,7 +89,7 @@ int main ()
 
     //printf("\n");
   
-
+    /*
     tMusica* m1 = inicializa_musica(autor, descricao);
 
     tMusica* m2 = inicializa_musica("Yaosobi", "Subarashi");
@@ -109,6 +109,6 @@ int main ()
     imprime_playlist(p);
 
     destroi_musica(m1);
-
+    */
     return 0;
 }

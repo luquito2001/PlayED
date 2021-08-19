@@ -1,22 +1,43 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
-#include "Playlist.h"
+#include "Pessoa.h"
 
 int main ()
 {
-    Playlist* p = inicializa_playlist();
+    /*
+    FILE* arquivo;
 
-    imprime_playlist(p);
+    arquivo = fopen("eletrica.txt", "r");
 
-    tMusica* mus = retira_playlist(p, "Yoasobi");
-    destroi_musica(mus);
+    if (arquivo == NULL) {
+        printf("Erro ao tentar abrir o arquivo!\n");
+        exit(1);
+    }
+    */
+    
+    printf("\n");
 
-    printf("2.0\n");
+    //Playlist* p = inicializa_playlist();
 
-    imprime_playlist(p);
+    tPessoa* pessoa = inicializa_pessoa("Lucas");
 
-    destroi_playlist(p);
+    imprime_pessoa(pessoa);
+
+    //imprime_pessoa(pessoa);
+
+    //imprime_playlist(p);
+
+    //tMusica* mus = retira_playlist(p, "Yoasobi");
+    //destroi_musica(mus);
+
+    //printf("2.0\n");
+
+    //imprime_playlist(p);
+
+    //destroi_playlist(p);
+
+    //fclose(arquivo);
     
     return 0;
 }
